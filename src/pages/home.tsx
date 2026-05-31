@@ -3,7 +3,6 @@ import { WonkyCircle } from "@/components/wonky-circle";
 const links = [
   { label: "GitHub", href: "https://github.com/eltoncrego" },
   { label: "LinkedIn", href: "https://linkedin.com/in/eltoncrego" },
-  { label: "Email", href: "mailto:rego.elton@gmail.com" },
 ];
 
 function Separator() {
@@ -16,9 +15,12 @@ export default function Home() {
   return (
     <article>
       <header className="mb-6">
-        <WonkyCircle size={44} className="text-accent mb-8" />
         <h1 className="font-display font-black text-4xl md:text-5xl tracking-tight leading-tight text-foreground">
-          Elton Christopher Rego.
+          Elton Lai-Rego
+          <WonkyCircle
+            size={12}
+            className="text-accent inline-block align-baseline ml-[2px] -mb-[2px] md:-mb-[1px]"
+          />
         </h1>
       </header>
 
@@ -26,19 +28,19 @@ export default function Home() {
 
       <section>
         <p className="drop-cap font-body text-lg leading-[1.75] text-justify text-foreground">
-          Currently building at{" "}
+          A software engineer with over eight years of experience. Right
+          now I'm at{" "}
           <a href="https://frigade.com" className="editorial-link font-bold">
             Frigade
           </a>
-          , where I help craft developer tools that make software onboarding
-          feel less like a chore and more like a conversation. I'm a front-end
-          engineer drawn to the seam between design and engineering — the place
-          where type is set, spacing is negotiated, and pixels become feel.
+          , building the core AI assistant platform and the dashboard that
+          powers it. I care a lot about how things look and how they feel to
+          use, and I've spent most of my career in that space between design
+          and engineering where those two things meet.
         </p>
         <p className="font-body text-lg leading-[1.75] text-justify text-foreground mt-5">
-          Before Frigade I shaped product experiences at LinkedIn and Gantri.
-          Outside of work you'll find me cooking, writing music, or reading
-          about the history of typesetting.
+          Before this I worked at LinkedIn, Gantri, and Viva. I like making
+          software that people don't have to think too hard about.
         </p>
       </section>
 
@@ -68,7 +70,7 @@ export default function Home() {
 
       <footer className="mt-16 md:mt-24">
         <p className="font-mono text-xs tracking-[0.15em] uppercase text-muted">
-          Oakland, California
+          Davis, California
         </p>
       </footer>
     </article>
