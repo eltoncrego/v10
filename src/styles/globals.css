@@ -136,3 +136,46 @@
     @apply font-sans;
   }
 }
+
+.drop-cap::first-letter {
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  font-size: 3.75em;
+  float: left;
+  line-height: 0.8;
+  margin-right: 0.08em;
+  margin-top: 0.05em;
+  color: var(--foreground);
+}
+
+.separator {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  justify-content: center;
+}
+
+.separator::before {
+  content: "";
+  flex: 1;
+  height: 0;
+  border-top: 2px dotted var(--color-separator);
+  border-image: repeating-linear-gradient(
+      to right,
+      var(--accent) 0 3px,
+      transparent 3px 7px
+    )
+    1;
+}
+
+.editorial-link {
+  text-decoration: none;
+  color: var(--foreground);
+  font-family: "Source Serif 4", serif;
+  font-weight: 600;
+  transition: color 300ms ease;
+}
+
+.editorial-link:hover {
+  color: var(--accent);
+}
