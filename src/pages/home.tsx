@@ -39,7 +39,7 @@ export default function Home() {
           and engineering where those two things meet.
         </p>
         <p className="font-body text-lg leading-[1.75] text-justify text-foreground mt-5">
-          Before this I worked at LinkedIn, Gantri, and Viva. I like making
+          Before this I worked at LinkedIn, Gantri, and Veeva. I like making
           software that people don't have to think too hard about.
         </p>
       </section>
